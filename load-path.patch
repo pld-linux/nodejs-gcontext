@@ -1,0 +1,8 @@
+--- nodejs-gcontext-0.0.2/lib/gcontext.js~	2012-12-14 12:42:59.000000000 +0200
++++ nodejs-gcontext-0.0.2/lib/gcontext.js	2013-04-08 21:14:51.070431135 +0300
+@@ -1,4 +1,4 @@
+-var _gcontext = require('../build/Release/gcontext.node');
++var _gcontext = require('../gcontext.node');
+ 
+ var GContext = module.exports = {};
+ 
