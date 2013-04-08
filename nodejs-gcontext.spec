@@ -2,7 +2,7 @@
 Summary:	Provide API to use GMainContext in Node.js
 Name:		nodejs-%{pkg}
 Version:	0.0.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://registry.npmjs.org/gcontext/-/%{pkg}-%{version}.tgz
@@ -14,6 +14,9 @@ BuildRequires:	rpmbuild(macros) >= 1.657
 BuildRequires:	sed >= 4.0
 Requires:	nodejs >= 0.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# redefine for arch specific
+%define		nodejs_libdir	%{_libdir}/node
 
 %description
 node-gcontext is an event loop integration between libuv and GLib, to
