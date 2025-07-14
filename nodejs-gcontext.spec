@@ -28,7 +28,7 @@ GLib event loop to be able to work on Node.js.
 %prep
 %setup -qc
 mv package/* .
-%patch0 -p1
+%patch -P0 -p1
 
 %{__rm} -r build
 
